@@ -1,0 +1,15 @@
+{
+  "name": "checkoutcom/composer-handler",
+  "description": "Checkout.com Composer Commands for Magento 2",
+  "type": "magento2-module",
+  "license": "MIT",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "Checkout\\": "src/"
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
