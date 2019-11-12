@@ -1,5 +1,5 @@
 {
-  "name": "checkoutcom/composer-handler",
+  "name": "checkout/composer-plugin",
   "description": "Checkout.com Composer Commands for Magento 2",
   "type": "magento2-module",
   "license": "MIT",
