@@ -1,2 +1,2 @@
 # checkout-composer-plugin
-Checkout Composer Plugin for handling Magento 2 Composer 
+This is a plugin to simplify the upgrade process for the Magento 2 Plugin
