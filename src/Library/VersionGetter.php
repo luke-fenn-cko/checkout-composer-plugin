@@ -15,4 +15,5 @@
  * @link      https://docs.checkout.com/
  */
 
-namespace Checkout\Controllers;
+namespace Checkout\Library;
+

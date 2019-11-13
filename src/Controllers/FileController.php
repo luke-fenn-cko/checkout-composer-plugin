@@ -16,3 +16,54 @@
  */
 
 namespace Checkout\Controllers;
+
+/**
+ * Class FileController
+ * @package Checkout\Controllers
+ */
+
+class FileController {
+
+    /**
+     * @var \Magento\Framework\Filesystem\DirectoryList
+     */
+    protected $_dir;
+
+    protected $mageRoot;
+
+    public function __construct(
+        \Magento\Framework\Filesystem\DirectoryList $dir
+    )
+    {
+        $this->_dir = $dir;
+        $this->mageRoot = $this->_dir->getRoot();
+    }
+
+    public function modifyProjectComposer() {
+
+
+        $composerFile = file_get_contents($this->mageRoot . 'composer.json');
+
+        $composerArr = json_decode($composerFile, true);
+
+        $scriptObject = array(
+            "update-checkout" => [
+                "Checkout\\Controllers\\ConsoleController::update"
+            ]
+        );
+
+        if (isset($composerArr["scripts"])) {
+            $composerArr["scripts"]["post-package-install"] = ["Checkout\\Controllers\\FileController::modifyProjectComposer"];
+        }
+
+        if (!isset($composerArr['scripts'])) {
+            $composerArr["scripts"] = $scriptObject;
+        }
+
+        $composerModified = json_encode($composerArr);
+
+        file_put_contents($composerFile, $composerModified);
+    }
+
+
+}

@@ -24,17 +24,25 @@ class ConsoleController {
      */
     public $mageVersion;
 
-          /**
+    /**
      * @var ModuleVersion
      */
     public $moduleVersion;
 
+    /**
+     * @var UpdateStatus
+     */
+    public $updateStatus;
 
     public static function logStatus() {
-        printf( 'Hello World');
+//        printf( );
     }
 
 //    public function warnPermissions() {
+//
+//    }
+
+//    public function update () {
 //
 //    }
 
