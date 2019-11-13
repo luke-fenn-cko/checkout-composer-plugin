@@ -30,7 +30,7 @@ class ConsoleController {
     public $moduleVersion;
 
 
-    public function logStatus() {
+    public static function logStatus() {
         printf( 'Hello World');
     }
 
