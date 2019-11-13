@@ -11,5 +11,10 @@
     "files": [
       "registration.php"
     ]
+  },
+  "scripts": {
+    "update-checkout": [
+      "Checkout\\Controllers::logStatus"
+    ]
   }
 }
