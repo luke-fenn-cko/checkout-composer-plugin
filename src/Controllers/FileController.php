@@ -24,25 +24,10 @@ namespace Checkout\Controllers;
 
 class FileController {
 
-    /**
-     * @var \Magento\Framework\Filesystem\DirectoryList
-     */
-    protected $_dir;
-
-    protected $mageRoot;
-
-    public function __construct(
-        \Magento\Framework\Filesystem\DirectoryList $dir
-    )
-    {
-        $this->_dir = $dir;
-        $this->mageRoot = $this->_dir->getRoot();
-    }
-
-    public function modifyProjectComposer() {
+    public static function modifyProjectComposer($file) {
 
 
-        $composerFile = file_get_contents($this->mageRoot . 'composer.json');
+        $composerFile = file_get_contents($file);
 
         $composerArr = json_decode($composerFile, true);
 
