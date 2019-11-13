@@ -20,7 +20,6 @@ namespace Checkout\Composer;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
-use Checkout\Composer\CheckoutInstaller;
 
 class Plugin implements PluginInterface
 {
