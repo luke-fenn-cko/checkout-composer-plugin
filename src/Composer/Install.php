@@ -29,4 +29,3 @@ class CheckoutInstaller extends LibraryInstaller {
        FileController::modifyProjectComposer('composer.json');
     }
 }
-
