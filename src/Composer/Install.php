@@ -21,10 +21,11 @@ namespace Checkout\Composer;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 use Checkout\Controllers\FileController;
+use Composer\Repository\InstalledRepositoryInterface;
 
-class Install extends LibraryInstaller {
+class CheckoutInstaller extends LibraryInstaller {
 
-    public function install() {
+    public function install(InstalledRepositoryInterface $repo, PackageInterface $package) {
        FileController::modifyProjectComposer('composer.json');
     }
 }
