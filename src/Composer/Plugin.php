@@ -1,4 +1,5 @@
 <?php
+require '../checkout.php';
 
 /**
  * Checkout.com
@@ -16,8 +17,6 @@
  */
 
 namespace Checkout\Composer;
-require __DIR__ . '/../../../../app/bootstrap.php';
-
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
