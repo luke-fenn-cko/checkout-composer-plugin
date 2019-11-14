@@ -16,7 +16,7 @@
  */
 
 namespace Checkout\Composer;
-require 'app/bootstrap.php';
+//require 'app/bootstrap.php';
 
 
 use Composer\Composer;
