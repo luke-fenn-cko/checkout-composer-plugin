@@ -17,15 +17,14 @@
  */
 
 namespace Checkout\Composer;
-
-require __DIR__ .'/../../checkout.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
 
-class Plugin implements PluginInterface
+class CheckoutPlugin implements PluginInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {

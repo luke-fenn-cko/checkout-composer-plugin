@@ -16,9 +16,6 @@
  */
 
 namespace Checkout\Composer;
-require __DIR__ .'/../../checkout.php';
-
-
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
