@@ -16,6 +16,8 @@
  */
 
 namespace Checkout\Composer;
+require 'app/bootstrap.php';
+
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
