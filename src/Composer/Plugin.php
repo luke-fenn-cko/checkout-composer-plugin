@@ -1,5 +1,5 @@
 <?php
-require '../checkout.php';
+
 
 /**
  * Checkout.com
@@ -17,6 +17,8 @@ require '../checkout.php';
  */
 
 namespace Checkout\Composer;
+
+require '../checkout.php';
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
