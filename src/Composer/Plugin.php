@@ -18,7 +18,7 @@
 
 namespace Checkout\Composer;
 
-require '../checkout.php';
+require '../../checkout.php';
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
